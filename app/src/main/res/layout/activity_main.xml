@@ -11,28 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="assignment3.assignment3.MainActivity">
 
-    <ViewSwitcher
-        android:id="@+id/switcher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:inAnimation="@anim/fade_in"
-        android:outAnimation="@anim/fade_out" >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:src="@drawable/unnamed" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:src="@drawable/wait" />
-    </ViewSwitcher>
-
     <Button
         android:text="Show Result"
         android:layout_width="wrap_content"
@@ -40,6 +18,30 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="44dp"
-        android:id="@+id/button" />
+        android:id="@+id/Button"
+        android:onClick="result"/>
+
+    <ViewSwitcher
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@anim/fade_in"
+        android:outAnimation="@anim/fade_out"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/greenbutton" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/redbutton" />
+    </ViewSwitcher>
 
 </RelativeLayout>
